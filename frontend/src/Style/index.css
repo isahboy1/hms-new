@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+ 
+}
+
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+.big-container {
+  display: grid;
+  height: 100%;
+  grid-template: 1vh auto 2vh / repeat(12, 1fr);
+  grid-gap: 2px;
+  grid-template-areas:  
+      "h h h h h h h h h h h h"
+      "c c c c c c c c c c c c"
+      "f f f f f f f f f f f f";
+}
+
+.big-header {
+  grid-area: h;
+}
+
+#root {
+  grid-area: c;
+  background: white;
+}
+
+.footer {
+  grid-area: f;
+}
