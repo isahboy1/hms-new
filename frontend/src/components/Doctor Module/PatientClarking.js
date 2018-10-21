@@ -313,7 +313,7 @@ class PatienClarking extends React.Component {
             collapse2, handleSubmit } = this;
         return(
             <div className="row patient-clarking">
-                <div className="col-md-3" >
+                <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"  >
                     {/* Doctor user guide component */}
                     <DoctorGuide /> 
 
