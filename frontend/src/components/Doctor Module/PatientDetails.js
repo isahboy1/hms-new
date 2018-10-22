@@ -90,8 +90,8 @@ export default class PatientDetails extends React.Component {
             <Input type="text" ref="firstname" className="Form-control" value={this.state.firstname} placeholder="FirstName" />
           </div><br />
 
-           <div sm={2}><br/>
-        <legend className="div-form-label col-xs-12 col-sm-12 col-md-3 col-lg-3">Gender</legend>
+           <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
+        <header className="div-form-label col-xs-12 col-sm-12 col-md-3 col-lg-3">Gender</header>
           <FormGroup check>
               <Label check>
                 <Input type="radio" name="radio1"  />{' '}
