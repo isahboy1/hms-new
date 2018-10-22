@@ -61,7 +61,7 @@ export default class PatientDetails extends React.Component {
       <div>
       <Form onSubmit={this.handleDelete.bind(this)} method="POST">
          <FormGroup row>
-         <Col sm={5}><br/>
+         <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
        
          <div>
            <figure className="Figimage"> Upload Passport Here dangana
@@ -69,29 +69,29 @@ export default class PatientDetails extends React.Component {
            </figure>
            </div> 
 
-           </Col>
-          <Col sm={7}><br/>
+           </div>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
            
-            {/* <FormText color="muted">
+            {/* <FormText divor="muted">
             Upload Passport Here...
             </FormText> */}
-          </Col>
+          </div>
         </FormGroup>
 
         <FormGroup row><br/>
           
-          <Col sm={6}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>SurName</Label>
             <Input type="text" ref="surname" className="Form-control" value={this.state.surnamee} placeholder="SurName" />
-          </Col>
+          </div>
 
-          <Col sm={6}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>FirstName</Label>
             <Input type="text" ref="firstname" className="Form-control" value={this.state.firstname} placeholder="FirstName" />
-          </Col><br />
+          </div><br />
 
-           <Col sm={2}><br/>
-        <legend className="col-form-label sm-1">Gender</legend>
+           <div sm={2}><br/>
+        <legend className="div-form-label col-xs-12 col-sm-12 col-md-3 col-lg-3">Gender</legend>
           <FormGroup check>
               <Label check>
                 <Input type="radio" name="radio1"  />{' '}
@@ -104,118 +104,118 @@ export default class PatientDetails extends React.Component {
                 Female
               </Label>
             </FormGroup>
-         </Col>
-         <Col sm={5}><br/>
+         </div>
+         <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Age</Label>
           <Input type="number" name="Age" id="exampleNumber" placeholder="Age" />
-         </Col>
+         </div>
 
-         <Col sm={5}><br/>
+         <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Marital Status</Label>
          <Input type="text" name="Fname" id="MaritalStatus" placeholder="Marital Status" />
-         </Col>
+         </div>
 
-         <Col sm={5}><br/>
+         <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Date Of Birth</Label>
           <Input type="date" name="date" id="DOB" placeholder="Date Of Birth" />
-          </Col>
+          </div>
 
-          <Col sm={3}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Tribe</Label>
           <Input type="text" name="date" id="Tribe" placeholder="Tribe" />
-          </Col>
+          </div>
 
-          <Col sm={4}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Religion</Label>
           <Input type="text" name="Religion" id="Religion" placeholder="Religion" />
-          </Col>
+          </div>
 
-          <Col sm={5}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Phone Number</Label>
           <Input type="text" name="PhoneNo" id="PhoneNo" placeholder="Phone Number" />
-          </Col>
-          <Col sm={2}><br/></Col>
-          <Col sm={5}><br/>
+          </div>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/></div>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Email Address</Label>
           <Input type="text" name="PhoneNo" id="Email" placeholder="Email Address" />
-          </Col>
+          </div>
 
-          <Col sm={4}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Nationality</Label>
           <Input type="text" name="Nationality" id="Nationality" placeholder="Nationality" />
-          </Col>
+          </div>
 
-          <Col sm={4}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>State</Label>
           <Input type="text" class="State" name="text" id="State" placeholder="State" />
-          </Col> 
+          </div> 
          
-          <Col sm={4}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>LGA</Label>
           <Input type="text" class="lga" name="text" id="LGA" placeholder="LGA" />
-          </Col> 
+          </div> 
 
-         < Col sm={5}><br/>
+         <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>Occupation</Label>
           <Input type="text" class="Occupation" name="text" id="Occupation" placeholder="Occupation" />
-          </Col> 
-          < Col sm={1}><br/></Col> 
+          </div> 
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/></div> 
 
-          <Col sm={6}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>Address</Label>
           <Input type="textarea" class="textarea" name="text" id="Address" />
-          </Col>
-          <Col sm={12}><br/>
+          </div>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <legend>Next Of Kin Information</legend>             
-              </Col>
-          <Col sm={6}><br/>
+              </div>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>Name</Label>
             <Input type="text" ref="Kname" className="Form-control" placeholder="Kin Name" />
-          </Col>
+          </div>
 
-          <Col sm={6}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>RelationShip</Label>
             <Input type="text" ref="RelationShip" className="Form-control" placeholder="RelationShip" />
-          </Col>
+          </div>
           
-          <Col sm={5}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Phone Number</Label>
           <Input type="text" name="PhoneNo" id="PhoneNo" placeholder="Phone Number" />
-          </Col>
-          <Col sm={2}><br/></Col>
-          <Col sm={5}><br/>
+          </div>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/></div>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
          <Label>Email Address</Label>
           <Input type="text" name="PhoneNo" id="Email" placeholder="Email Address" />
-          </Col>
+          </div>
 
-          < Col sm={5}><br/>
+          < div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>Occupation</Label>
           <Input type="text" class="Occupation" name="text" id="Occupation" placeholder="Occupation" />
-          </Col> 
-          < Col sm={1}><br/></Col> 
+          </div> 
+          < div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/></div> 
 
-          <Col sm={6}><br/>
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><br/>
           <Label>Address</Label>
           <Input type="textarea" class="textarea" name="text" id="Address" />
-          </Col>
+          </div>
         </FormGroup>
         
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <Button color="danger" >submit</Button>
           </div>
-          <div className=" col-md-4">
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <Button color="success">Edit</Button>
           </div>
-          <div className="col-md-4">
+          <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <Button color="primary">Print</Button>
           </div>
         </div>
 
         <div className="row">
-        <Col sm={4}>  </Col>
+        <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">  </div>
        
-            <Col sm={4}>  </Col>
+            <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">  </div>
           </div>
       
       </Form>
