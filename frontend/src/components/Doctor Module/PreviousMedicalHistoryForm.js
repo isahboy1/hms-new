@@ -47,47 +47,47 @@ export default class PreviousMedicalHistory extends Component {
                 <h3 className="text-center"><strong>Previous Medical History</strong></h3>
                 <hr />
                 <FormGroup row>
-                    <label className="col-md-2">Pregnancy, Birth Neonatal History:</label>
+                    <label className="col-xs-12 col-sm-12 col-md-2 col-lg-3">Pregnancy, Birth Neonatal History:</label>
                     <textarea 
                         type="text" 
                         name="pbnh" 
                         value={this.state.pbnh} 
                         onChange={this.onInputChange} 
-                        className="form-control col-md-4" ></textarea>
+                        className="form-control col-xs-12 col-sm-12 col-md-4 col-lg-3" ></textarea>
                     <label className="col-md-2">Immunization History:</label>
                     <textarea 
                         type="text" 
                         name="immunization" 
                         value={this.state.immunization} 
                         onChange={this.onInputChange} 
-                        className="form-control col-md-4" ></textarea>
+                        className="form-control col-xs-12 col-sm-12 col-md-4 col-lg-3" ></textarea>
                 </FormGroup>
                 <FormGroup row>
-                    <label className="col-md-2">Nutrition History:</label>
+                    <label className="col-xs-12 col-sm-12 col-md-2 col-lg-3">Nutrition History:</label>
                     <textarea 
                         type="text" 
                         name="nutrition" 
                         value={this.state.nutrition} 
                         onChange={this.onInputChange} 
-                        className="form-control col-md-4" ></textarea>
-                    <label className="col-md-2">Developmental History:</label>
+                        className="form-control col-xs-12 col-sm-12 col-md-4 col-lg-3" ></textarea>
+                    <label className="col-xs-12 col-sm-12 col-md-2 col-lg-3">Developmental History:</label>
                     <textarea 
                         type="text" 
                         name="development" 
                         value={this.state.development} 
                         onChange={this.onInputChange} 
-                        className="form-control col-md-4" ></textarea>
+                        className="form-control col-xs-12 col-sm-12 col-md-4 col-lg-3" ></textarea>
                 </FormGroup>
                 <FormGroup row>
-                    <label className="col-md-3"><strong>Known Hypertensive?</strong></label>
+                    <label className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><strong>Known Hypertensive?</strong></label>
                     <input type="radio" name="hypertensive" checked={this.state.hypertensive==='yes'} onChange={this.onInputChange} value="yes" />Yes
                     <input type="radio" name="hypertensive" checked={this.state.hypertensive==='no'} onChange={this.onInputChange} value="no" />No
-                    <label className="col-md-3 offset-md-2"><strong>Known Diabetic?</strong></label>
+                    <label className="col-xs-12 col-sm-12 col-md-3 col-lg-3 offset-md-2"><strong>Known Diabetic?</strong></label>
                     <input type="radio" name="diabetic" checked={this.state.diabetic==='yes'} onChange={this.onInputChange} value="yes" />Yes
                     <input type="radio" name="diabetic" checked={this.state.diabetic==='no'} onChange={this.onInputChange} value="no" />No
                 </FormGroup>
                 <FormGroup row>
-                    <label className="col-md-3"><strong>Known Asthmatic?</strong></label>
+                    <label className="col-xs-12 col-sm-12 col-md-3 col-lg-3"><strong>Known Asthmatic?</strong></label>
                     <input type="radio" name="asthmatic" checked={this.state.asthmatic==='yes'} onChange={this.onInputChange} value="yes" />Yes
                     <input type="radio" name="asthmatic" checked={this.state.asthmatic==='no'} onChange={this.onInputChange} value="no" />No
                 </FormGroup>

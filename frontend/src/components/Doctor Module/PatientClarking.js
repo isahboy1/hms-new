@@ -313,11 +313,11 @@ class PatienClarking extends React.Component {
             collapse2, handleSubmit } = this;
         return(
             <div className="row patient-clarking">
-                <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"  >
+                <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3" >
                     {/* Doctor user guide component */}
                     <DoctorGuide /> 
 
-                    <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"  >
+                    <div className="col-xs-12 col-sm-12 col-md-8 col-lg-3" >
                         <Collapse isOpen={collapse}>
                             {/* 
                                 This component display the list of patients assigned to the current
@@ -327,7 +327,7 @@ class PatienClarking extends React.Component {
                         </Collapse>
                     </div>
 
-                    <div  className="prvVisitDetails col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div  className="prvVisitDetails col-xs-12 col-sm-12 col-md-8 col-lg-3">
                         <Collapse isOpen={!collapse}>
                             {/* 
                                 This component consists of the previous visits record for 
@@ -346,7 +346,7 @@ class PatienClarking extends React.Component {
                 </div> 
 
                 
-                <div style={{height:"80%", border:'1px solid #007bff'}} className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <div style={{height:"80%", border:'1px solid #007bff'}} className="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <Diagnosis />
                     <hr />
                     <div>
@@ -382,7 +382,7 @@ class PatienClarking extends React.Component {
                 </div>
               
 
-                <Col md={3} className="">
+                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                  {/* 
                     LastDiagnosis renders the patients diagnosis details with
                     respect to the visit date clicked.
@@ -393,7 +393,7 @@ class PatienClarking extends React.Component {
                     <Collapse isOpen={collapse2}>
                         <LastDiagnosis records={records} />
                     </Collapse>
-                </Col>
+                </div>
 
             </div>
         );

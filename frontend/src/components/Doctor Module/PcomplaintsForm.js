@@ -72,13 +72,13 @@ export class PcomplaintsForm extends React.Component {
             <Form onSubmit={this.handleFormSubmit}>
                 <h3 className="text-center"><strong>Presenting Complaints</strong></h3>
                 <FormGroup row>
-                    <label className="col-md-4">Presenting Complaint: </label>
+                    <label className="col-xs-12 col-sm-12 col-md-4 col-lg-3">Presenting Complaint: </label>
                     <input value={complaint} className="form-control col-md-6" type="text" onChange={this.onComplaintChange} />
                 </FormGroup>
                 <FormGroup row>
-                    <label className="col-md-4">Duration: </label>
-                    <select className="form-control col-md-1" onChange={this.onDurationChange}>{dropdownItems}</select>
-                    <label className="col-md-2">Period: </label>
+                    <label className="col-xs-12 col-sm-12 col-md-4 col-lg-3">Duration: </label>
+                    <select className="form-control col-xs-12 col-sm-12 col-md-1 col-lg-3" onChange={this.onDurationChange}>{dropdownItems}</select>
+                    <label className="col-xs-12 col-sm-12 col-md-2 col-lg-3">Period: </label>
                     <div className="col-md-4">
                         <input type="radio" name="period" value="days" onChange={this.onPeriodChange}/>Days
                         <input type="radio" name="period" value="weeks" onChange={this.onPeriodChange}/>Weeks
