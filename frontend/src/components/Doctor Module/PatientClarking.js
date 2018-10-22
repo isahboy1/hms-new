@@ -313,11 +313,11 @@ class PatienClarking extends React.Component {
             collapse2, handleSubmit } = this;
         return(
             <div className="row patient-clarking">
-                <div className="col-md-3" >
+                <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"  >
                     {/* Doctor user guide component */}
                     <DoctorGuide /> 
 
-                    <div className="col-md-12" >
+                    <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3"  >
                         <Collapse isOpen={collapse}>
                             {/* 
                                 This component display the list of patients assigned to the current
@@ -327,7 +327,7 @@ class PatienClarking extends React.Component {
                         </Collapse>
                     </div>
 
-                    <div  className="prvVisitDetails col-md-12">
+                    <div  className="prvVisitDetails col-xs-12 col-sm-12 col-md-3 col-lg-3">
                         <Collapse isOpen={!collapse}>
                             {/* 
                                 This component consists of the previous visits record for 
@@ -346,7 +346,7 @@ class PatienClarking extends React.Component {
                 </div> 
 
                 
-                <div style={{height:"80%", border:'1px solid #007bff'}} className="col-md-6">
+                <div style={{height:"80%", border:'1px solid #007bff'}} className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <Diagnosis />
                     <hr />
                     <div>
